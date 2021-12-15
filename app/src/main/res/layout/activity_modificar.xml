@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/edtNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Nombre:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtDescripcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Descripción:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNombre2"
+        app:layout_constraintStart_toStartOf="@+id/edtNombre2"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombre2" />
+    <Spinner
+        android:id="@+id/spState2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDescripcion2"
+        app:layout_constraintStart_toStartOf="@+id/edtDescripcion2"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescripcion2" />
+    <EditText
+        android:id="@+id/edtlat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Latitud:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/spState2"
+        app:layout_constraintStart_toStartOf="@+id/spState2"
+        app:layout_constraintTop_toBottomOf="@+id/spState2" />
+    <EditText
+        android:id="@+id/edtlon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Longitud:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtlat2"
+        app:layout_constraintStart_toStartOf="@+id/edtlat2"
+        app:layout_constraintTop_toBottomOf="@+id/edtlat2" />
+    <Button
+        android:id="@+id/btnGuardar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="GUARDAR"
+        app:layout_constraintEnd_toEndOf="@+id/edtlon2"
+        app:layout_constraintStart_toStartOf="@+id/edtlon2"
+        app:layout_constraintTop_toBottomOf="@+id/edtlon2" />
+
+    <Button
+        android:id="@+id/btnCancelar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CANCELAR"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuardar2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnGuardar2"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
